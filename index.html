@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Just a console</title>
+    <script src="index_console.js"></script>
+</head>
+<body>
+    Press F12 to see what will happen
+
+    <script>
+        try {
+            debugCnl('info', 'I\'ll trow an exception. . . .');
+            debugCnl('warns', 'This is only a test');
+        } catch (error) {
+            eval(errorCnl('Main Screen', 'This is a error test!', error));
+        }
+
+    </script>
+</body>
+</html>
